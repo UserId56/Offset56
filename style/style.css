@@ -1,0 +1,38 @@
+@font-face {
+    font-family: "Raleway";
+    font-weight: normal;
+    src: url(../fonts/Raleway-Regular.ttf);
+}
+
+body {
+    margin: 0;
+}
+
+.container-header {
+    background-image: url(../img/bg_header.png);
+    width: 100%;
+    height: 300px;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 1230px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    padding: 40px 0 0 30px;
+}
+
+.logo-img {
+    fill: #ffffff;
+}
+
+.logo-name {
+    font-size: 34px;
+    font-family: "Raleway";
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: right;
+}
