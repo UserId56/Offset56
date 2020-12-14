@@ -4,6 +4,18 @@
     src: url(../fonts/Raleway-Regular.ttf);
 }
 
+@font-face {
+    font-family: "Raleway";
+    font-weight: 600;
+    src: url(../fonts/Raleway-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-weight: normal;
+    src: url(../fonts/Montserrat_Regular.ttf);
+}
+
 body {
     margin: 0;
 }
@@ -11,7 +23,6 @@ body {
 .container-header {
     background-image: url(../img/bg_header.png);
     width: 100%;
-    height: 300px;
 }
 
 .wrapper {
@@ -19,13 +30,19 @@ body {
     width: 1230px;
 }
 
-.logo {
+.container-logo-nav {
     display: flex;
-    align-items: center;
     padding: 40px 0 0 30px;
 }
 
-.logo-img {
+.logo {
+    display: flex;
+    align-items: center;
+    width: 182px;
+}
+
+.logo-img,
+.icon-nav {
     fill: #ffffff;
 }
 
@@ -35,4 +52,77 @@ body {
     color: rgb(255, 255, 255);
     line-height: 1.2;
     text-align: right;
+}
+
+.head-site-nav {
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 772px;
+    margin-left: 218px;
+
+}
+
+.head-site-nav>a {
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+}
+
+.head-site-nav>a:hover {
+    color: rgb(199, 178, 153);
+}
+
+.head-site-nav>a:nth-child(9) {
+    margin-left: 33px;
+}
+
+.slider {
+    height: 740px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider>span {
+    margin-top: 14px;
+}
+
+.slider>span:nth-child(1) {
+    margin-top: 0;
+    font-size: 36px;
+    font-family: "Raleway";
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: center;
+}
+
+.slider>span:nth-child(2) {
+    font-size: 52px;
+    font-family: "Raleway";
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.slider>span:nth-child(3) {
+    font-size: 16px;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    line-height: 1.5;
+    text-align: center;
+    width: 566px;
+}
+
+.slider>a {
+    text-decoration: none;
+}
+
+.str {
+    height: 53px;
 }
