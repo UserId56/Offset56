@@ -54,7 +54,8 @@ body {
 
 .logo-img,
 .icon-nav,
-.project-link>a>svg {
+.project-link>a>svg,
+.control-item>button>svg {
     fill: #ffffff;
 }
 
@@ -577,4 +578,327 @@ body {
 .project-buttom:hover {
     color: #998675;
     background-color: #fbfaf8;
+}
+
+.presentation {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.presentation-video {
+    width: 100vw;
+    object-fit: cover;
+}
+
+.control {
+    width: 553px;
+    position: absolute;
+}
+
+.control-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.control-item>button {
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.control-item>button:hover>svg {
+    fill: #c7b299;
+}
+
+.control-item>button:hover>.play {
+    transform: scale(1.2);
+}
+
+.play {
+    width: 100px;
+    height: 100px;
+    opacity: 0.2;
+    background-color: #000000;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 1s ease-in;
+}
+
+.control-item>button>svg {
+    position: absolute;
+    margin: 0 auto;
+    top: 15px;
+    left: 15px;
+}
+
+.control-title {
+    font-family: "Raleway";
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 500;
+    color: #ffffff;
+    text-align: center;
+    margin: 45px 0 25px 0;
+}
+
+.control-description {
+    font-family: "Montserrat";
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 300;
+    color: #ffffff;
+    text-align: center;
+}
+
+.time {
+    margin-top: 40px;
+    font-family: "Montserrat";
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #c7b299;
+    text-align: center;
+}
+
+.hidden-control {
+    display: none;
+}
+
+.mobile>.wrapper {
+    padding: 80px 0 0 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.mobile-about {
+    margin-left: 29px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 657px;
+}
+
+.mobile-title {
+    font-family: "Raleway";
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 600;
+    color: #555555;
+}
+
+.mobile-description {
+    margin-top: 40px;
+    font-family: "Montserrat";
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 300;
+    color: #8c8c8c;
+}
+
+.mobile-list {
+    list-style: none;
+    margin-top: 45px;
+    font-family: "Montserrat";
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 300;
+    color: #8c8c8c;
+    align-self: flex-end;
+}
+
+.mobile-list>li {
+    position: relative;
+    padding-left: 21px;
+}
+
+.mobile-list>li::before {
+    content: "";
+    padding-left: 21px;
+    height: 21px;
+    position: absolute;
+    background-image: url(../img/marker_list.png);
+    background-size: 21px;
+    background-repeat: no-repeat;
+    left: -29px;
+    top: 5px;
+}
+
+.statisic {
+    height: 300px;
+    background-color: #f4f5f8;
+    background-image: linear-gradient(90.0deg, #211b19 0%, #4e3427 100%);
+}
+
+.statisic-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.statisic-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 300px;
+}
+
+.statisic-item-img {
+    width: 54px;
+    height: 54px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.statisic-item-img>svg {
+    margin: 0 auto;
+    fill: #c7b299;
+}
+
+.statisic-item-numeric {
+    margin-top: 30px;
+    font-family: "Montserrat";
+    font-size: 48px;
+    line-height: 36px;
+    font-weight: 200;
+    color: #ffffff;
+    text-align: center;
+}
+
+.statisic-item-title {
+    margin: 21px 0 30px;
+    font-family: "Montserrat";
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #c7b299;
+    text-align: center;
+}
+
+.statisic-item-line {
+    width: 30px;
+    border-bottom: 2px solid #ffffff;
+    margin: 0 auto;
+}
+
+.recent>.wrapper {
+    padding: 80px 30px;
+}
+
+.recent-title {
+    display: block;
+    font-family: "Raleway";
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 600;
+    color: #555555;
+    text-align: center;
+}
+
+.recent-description {
+    display: block;
+    margin: 30px auto 40px;
+    width: 758px;
+    font-family: "Montserrat";
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 300;
+    color: #8c8c8c;
+    text-align: center;
+}
+
+.recent-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.recent-container-item {
+    position: relative;
+}
+
+.post-calendar {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 20px;
+    top: 20px;
+}
+
+.post-calendar-date {
+    font-family: "Montserrat";
+    font-size: 24px;
+    line-height: 20px;
+    font-weight: 300;
+    color: #ffffff;
+    text-align: center;
+    width: 50px;
+    height: 35px;
+    background-color: #363636;
+    border-radius: 3px 3px 0px 0px;
+    padding: 9px 0;
+    box-sizing: border-box;
+}
+
+.post-calendar-m {
+    font-family: "Roboto";
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 400;
+    padding: 3px;
+    color: #ffffff;
+    box-sizing: border-box;
+    text-align: center;
+    width: 50px;
+    height: 25px;
+    background-color: #252525;
+    border-radius: 0px 0px 3px 3px;
+}
+
+.recent-about {
+    width: 370px;
+    border: 1px solid #f8f8f8;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.recent-about-title {
+    display: block;
+    font-family: "Raleway";
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 500;
+    color: #555555;
+}
+
+.recent-about-description {
+    display: block;
+    font-family: "Montserrat";
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 300;
+    color: #8c8c8c;
+    margin: 18px 0 27px;
+}
+
+.recent-about>a {
+    text-decoration: none;
+    display: block;
+    font-family: "Montserrat";
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300;
+    color: #c7b299;
 }
