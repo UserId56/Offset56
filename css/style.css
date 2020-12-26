@@ -50,6 +50,7 @@ body {
     display: flex;
     align-items: center;
     width: 182px;
+    text-decoration: none;
 }
 
 .logo-img,
@@ -91,6 +92,14 @@ body {
 .head-site-nav>a>svg:hover {
     color: rgb(199, 178, 153);
     fill: rgb(199, 178, 153);
+}
+
+.head-site-nav>a:active,
+.head-site-nav>a>svg:active {
+    transition: color 0s ease-in,
+        fill 0s ease-in;
+    color: #4e3427;
+    fill: #4e3427;
 }
 
 .head-site-nav>a:nth-child(9) {
@@ -138,7 +147,7 @@ body {
     width: 566px;
 }
 
-.slider>a {
+.slider-buttom {
     margin-top: 55px;
     padding: 21px 0;
     text-decoration: none;
@@ -158,48 +167,66 @@ body {
         background-color 0.5s ease-in;
 }
 
-.slider>a:hover {
+.slider-buttom:hover {
     color: #998675;
     background-color: #ffffff;
 }
 
-.slider>a:active {
+.slider-buttom:active {
     transition: color 0s ease-in,
         background-color 0s ease-in;
     color: #ffffff;
     background-color: #191919;
 }
 
-.slider:after {
+.slider-right {
+    top: 336px;
+    left: 1336px;
+    position: absolute;
+}
+
+.slider-right:after {
     content: "";
     display: inline-block;
-    position: absolute;
     width: 52px;
     height: 52px;
     border-top: 3px solid #d3c1ad;
     border-right: 3px solid #d3c1ad;
     transform: rotate(45deg);
-    top: 336px;
-    left: 1336px;
-    cursor: pointer;
-    transition: border-top 1s ease-in,
-        border-right 1s ease-in;
+    transition: border-top 0.5s ease-in,
+        border-right 0.5s ease-in;
 }
 
-.slider:before {
+.slider-left {
+    position: absolute;
+    top: 336px;
+    left: -150px;
+}
+
+.slider-left:before {
     content: "";
     display: inline-block;
-    position: absolute;
     width: 52px;
     height: 52px;
     border-top: 3px solid #d3c1ad;
     border-right: 3px solid #d3c1ad;
     transform: rotate(-135deg);
-    top: 336px;
-    left: -150px;
-    cursor: pointer;
     transition: border-top 1s ease-in,
         border-right 1s ease-in;
+}
+
+.slider-left:hover::before,
+.slider-right:hover::after {
+    border-top: 3px solid #998675;
+    border-right: 3px solid #998675;
+}
+
+.slider-left:active::before,
+.slider-right:active::after {
+    transition: border-top 0s ease-in,
+        border-right 0s ease-in;
+    border-top: 3px solid #ffffff;
+    border-right: 3px solid #ffffff;
 }
 
 .number-list {
