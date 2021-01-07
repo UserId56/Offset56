@@ -53,6 +53,10 @@ body {
     text-decoration: none;
 }
 
+.mobi-menu {
+    display: none;
+}
+
 .logo-img,
 .icon-nav,
 .project-link>a>svg,
@@ -1362,4 +1366,165 @@ body {
 .footer-site-left>a:hover>.company-txt-logo,
 .footer-site-right>a:hover>.text-white-footer {
     color: #ffffff;
+}
+
+@media (max-width:480px) {
+
+    body {
+        width: 100%;
+        margin: 0;
+    }
+
+    .slider,
+    .number-list,
+    .ideas,
+    .theme,
+    .presentation,
+    .about-company,
+    .filter-tag,
+    .statisic,
+    .recent-slider {
+        display: none;
+    }
+
+    .wrapper {
+        width: 80%;
+    }
+
+    .container-header {
+        padding-bottom: 40px;
+        position: fixed;
+        z-index: 100;
+        background-image: none;
+        background-color: #4e3427;
+    }
+
+    .container-logo-nav {
+        padding: 40px 0 0;
+        position: relative;
+    }
+
+    .head-site-nav {
+        position: absolute;
+        width: auto;
+        flex-direction: column;
+        left: 24%;
+        top: 135px;
+        display: none;
+    }
+
+    .mobi-menu {
+        display: block;
+        margin-left: 40%;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+    }
+
+    .mobi-menu-item {
+        height: 6px;
+        background-color: #ffffff;
+    }
+
+    .mobi-menu-show {
+        position: relative;
+    }
+
+    .mobi-menu-show>.mobi-menu-item:first-child {
+        position: absolute;
+        left: 0;
+        top: 21px;
+        width: 50px;
+        height: 6px;
+        background-color: #ffffff;
+        transform: rotate(45deg);
+    }
+
+    .mobi-menu-show>.mobi-menu-item:nth-child(2) {
+        display: none;
+    }
+
+    .mobi-menu-show>.mobi-menu-item:last-child {
+        position: absolute;
+        left: 0;
+        top: 21px;
+        width: 50px;
+        height: 6px;
+        background-color: #ffffff;
+        transform: rotate(-45deg);
+    }
+
+    .mobi-menu-visibility {
+        display: flex;
+    }
+
+    .head-site-nav>a {
+        background-color: #4e3427;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .head-site-nav>a:nth-child(9) {
+        margin-left: 0;
+    }
+
+    .tools>.wrapper {
+        padding-top: 150px;
+        flex-wrap: wrap;
+    }
+
+    .project-description {
+        width: auto;
+    }
+
+    .project-list-item:nth-child(2),
+    .project-list-item:nth-child(5) {
+        margin: 0 0 30px 0;
+    }
+
+    .mobile>.wrapper {
+        padding: 0;
+    }
+
+    .mobile>.wrapper>img {
+        display: none;
+    }
+
+    .mobile-about {
+        margin-left: 0;
+    }
+
+    .mobile-list {
+        margin: 45px 0 45px;
+    }
+
+    .recent>.wrapper {
+        padding: 0;
+    }
+
+    .recent-description {
+        width: auto;
+    }
+
+    .recent-container {
+        margin-bottom: 45px;
+    }
+
+    .partner>.wrapper {
+        padding: 30px 0;
+        flex-wrap: wrap;
+    }
+
+    .partner-item>img {
+        height: 100px;
+    }
+
+    .footer-site>.wrapper {
+        padding: 20px 0;
+        display: block;
+    }
 }
